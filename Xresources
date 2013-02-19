@@ -1,0 +1,187 @@
+! after editing run: xrdb -merge ~/.Xresources
+
+! xdefaults
+Xft.autohint: 		1
+Xft.antialias: 		1
+Xft.hinting: 		true
+Xft.hintstyle: 		hintslight
+Xft.dpi: 		96
+Xft.rgba: 		rgb
+Xft.lcdfilter: 		lcddefault
+
+
+! xterm
+xterm*title: 		xterm
+xterm*faceName: 	xft:Inconsolata:size=8
+xterm*geometry: 	120x60
+xterm*transparency:	true
+xterm*cutNewline: 	false
+xterm*on4Clicks: 	group
+xterm*on5Clicks: 	page
+xterm*internalBorder: 	1
+xterm*background: 	#181818
+xterm*foreground: 	light grey
+xterm*metaSendsEscape: 	true
+xterm*colorBD: 		#ffffff
+xterm*colorBDMode: 	false
+xterm*cursorBlink: 	false
+xterm*cursorColor: 	#e2baf1
+!xterm*veryBoldColors: 	14
+xterm*dynamiccolors: 	true
+xterm*utf8: 		1
+xterm*loginShell: 	true
+xterm*charClass: 	33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+xterm*jumpScroll: 	true
+xterm*multiScroll: 	true
+xterm*saveLines: 	4096
+xterm*TitleBar:         off
+xterm*iconPixmap:/usr/share/pixmaps/xterm-color_24x24.xpm
+
+
+! urxvt
+urxvt.depth:		32
+urxvt.buffered:		true
+urxvt.geometry:		130x16
+urxvt.background:       rgba:0000/0000/0000/4444
+urxvt.foreground:	#bbbbbb
+urxvt.underlineColor:	#005f87
+urxvt.highlightColor:	#aaaaaa
+urxvt.highlightTextColor: white
+urxvt.cursorColor: 	green
+urxvt.cursorColor2:	green
+urxvt.reverseVideo:	false
+urxvt.jumpScroll:	false
+urxvt.skipScroll:	false
+urxvt.fading:		15
+urxvt.fadeColor:	#444444
+urxvt.scrollColor:	#333333
+urxvt.troughColor:	#222222
+urxvt.borderColor:	#111111
+urxvt.font:		xft:Inconsolata:size=9
+urxvt.boldFont:		xft:Inconsolata:size=9
+urxvt.ItalicFont:	xft:Inconsolata:size=9
+urxvt.boldItalicFont:	xft:Inconsolata:size=9
+urxvt.letterSpace: 	-1
+urxvt.intensityStyles:	true
+urxvt.title:		urxvt
+urxvt.iconName:		urxvt
+urxvt.mapAlert:		false
+urxvt.urgentOnBell:	false
+urxvt.visualBell:	false
+urxvt.loginShell:	true
+urxvt.utmpInhibit:	true
+urxvt.print-pipe:	cat > $(TMPDIR=$HOME mktemp urxvt.XXXXXX)
+urxvt.scrollstyle:	plain
+urxvt.thickness:	1
+urxvt.scrollbar:	false
+urxvt.scrollBar_right:	true
+urxvt.scrollBar_floating: 	true
+urxvt.scrollBar_align:	center
+urxvt.saveLines:	4096
+urxvt.internalBorder:	0
+urxvt.externalBorder:	0
+urxvt.borderLess:	true
+urxvt.skipBuiltinGlyphs:	true
+urxvt.termName: 	rxvt-256color
+urxvt.lineSpace:	0
+urxvt.meta8:		false
+urxvt.mouseWheelScrollPage: 	false
+urxvt.cursorBlink:	true
+urxvt.cursorUnderline:	true
+urxvt.pointerBlank:	false
+urxvt.pointerColor:	green
+!urxvt.pointerColor2:	cyan
+urxvt.pointerBlankDelay:2
+urxvt.ImLocale:		en_US.utf8
+urxvt.tripleclickwords:	true
+urxvt.transparent:	false
+!urxvt.tintColor:	white
+!urxvt.inheritPixmap: 	
+urxvt.shading:		90
+urxvt.blurRadius:	3x3
+urxvt.perl-ext-common:	default,matcher,vtwheel,clipboard
+urxvt.urlLauncher:	/usr/bin/iceweasel
+urxvt.matcher.button:	1
+urxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+urxvt.colorUL: 		#4682B4
+urxvt.iconFile: 	/usr/share/icons/Faenza-CrunchBang/apps/scalable/utilities-terminal.svg
+! urxvt colors
+urxvt.color0	: rgb:00/00/00
+urxvt.color1	: rgb:bb/00/00
+urxvt.color2	: rgb:00/aa/00
+urxvt.color3	: rgb:ff/b8/00
+urxvt.color4	: rgb:04/3a/6b
+urxvt.color5	: rgb:72/21/7d
+urxvt.color6	: rgb:00/63/63
+urxvt.color7	: rgb:be/be/be
+urxvt.color8	: rgb:66/66/66
+urxvt.color9	: rgb:d7/00/00
+urxvt.color10	: rgb:55/ff/55
+urxvt.color11	: rgb:ff/ff/55
+urxvt.color12	: rgb:97/a4/f7
+urxvt.color13	: rgb:ff/55/ff
+urxvt.color14	: rgb:55/ff/ff
+urxvt.color15	: rgb:ee/ee/ee
+!alternate color scheme below
+!urxvt.color1	: rgb:aa/00/00
+!urxvt.color2	: rgb:00/85/00
+!urxvt.color3	: rgb:ff/b8/00
+!urxvt.color4	: rgb:04/3a/6b
+!urxvt.color5	: rgb:72/21/7d
+!urxvt.color6	: rgb:00/63/63
+!urxvt.color7	: rgb:be/be/be
+!urxvt.color8	: rgb:66/66/66
+!urxvt.color9	: rgb:cf/61/71
+!urxvt.color10	: rgb:26/99/26
+!urxvt.color11	: rgb:bf/97/30
+!urxvt.color12	: rgb:26/53/7c
+!urxvt.color13	: rgb:60/01/6d
+!urxvt.color14	: rgb:00/99/99
+!urxvt.color15	: rgb:dd/dd/dd
+! urxvt info: http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod#RESOURCES
+
+
+! aterm
+aterm*termName:		xterm
+aterm*loginShell:	true
+aterm*transparent:      true
+aterm*shading:		95
+aterm*scrollBar:        false
+!aterm*scrollBar_right:  true
+!aterm*transpscrollbar:  true
+aterm*saveLines:        4096
+!aterm*tinting:         gray
+!aterm*tintingType:	true
+aterm*borderwidth:      0
+aterm*geometry:         100x40
+aterm*dynamicColors:    true
+aterm*utf8:             2
+aterm*eightBitInput:    true
+aterm*scrollTtyKeypress:true
+aterm*scrollTtyOutput:  false
+!aterm*fading:          70
+!aterm*jumpScroll:       true
+!aterm*multiScroll:      true
+aterm*toolBar:          false
+aterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48 
+aterm*font:		*-*-fixed-*-*-*-*-12-*-*-*-*-*-iso8859-*
+! aterm colors
+aterm*foreground	: #181818
+aterm*background	: #000000
+aterm*cursorColor	: #222222
+aterm*color0	: #2e3436
+aterm*color1    : #5eff00
+aterm*color2    : #a82974
+aterm*color3    : #3971b4
+aterm*color4    : #99cc33
+aterm*color5    : #ff5800
+aterm*color6    : #fffd00
+aterm*color7    : #444444
+aterm*color8    : #d37dcf
+aterm*color9    : #96c041
+aterm*color10   : #ff00bb
+aterm*color11   : #ff5800
+aterm*color12   : #ff9100
+aterm*color13   : #ff9100
+aterm*color14   : #3971b4
+aterm*color15   : #3971b4

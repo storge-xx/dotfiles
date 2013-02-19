@@ -1,0 +1,41 @@
+## orig author: Seth House <seth@eseth.com>
+## modified by: storge
+
+###|options|###
+nethack on              		# be careful! new screen tonight.
+sorendition "kg"        		# makes screen messages stand out, black on green
+msgwait 2               		# default message display is too long
+startup_message off     		# boooring!
+version                 		# echo version on startup
+autodetach on           		# aka "save your bacon" option
+altscreen on            		# full-screen programs (less, Vim) should be cleared once quit
+vbell off               		# visual bells off
+defutf8 on              		# allow utf chars
+defnonblock 5
+defflow off             		# disable flow control (buggy)
+bind s                  		# free ctrl-s
+# escape ^Ss             		# ctrl-s escape key, or invoke: screen -e'^Ss' [see note (1)]
+ignorecase on           		# scrollback case insensitive search
+defscrollback 9999      		# scrollback buffer size
+bufferfile $HOME/.screen-exchange  	# scrollback bufer kept out of /tmp
+term screen-256color			# see note (3)
+
+###|startup|###
+screen -t irssi				# window 0
+screen -t finch				# window 1
+screen -t todo				# window 2
+screen -t term				# window 3
+select 0				# default window: 0
+
+###|hardstatus|### see note (4)
+hardstatus alwayslastline "%{mk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{mk}%?%+Lw %= %{mk}@%H %{ck}%Y.%m.%d %{gk}%D %{yk}%0c %{bk}%l"
+
+## notes:
+## (1) FIXME: http://web.mit.edu/gnu/doc/html/screen_14.html
+## (2) FIXME: http://stackoverflow.com/questions/994563/integrate-readlines-kill-ring-and-the-x11-clipboard
+## (3) 256 colors: http://frexx.de/xterm-256-notes/
+## (4) adds a nice "tabbed" look, kinda long but gracefully pushes the status stuff off-screen if need be
+## Also put this in your shell startup file:
+## tty > /dev/null && stty -ixon -ixoff
+
+## eof
